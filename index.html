@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="container">
-        
-        <header id="header" >
-            <h1 id="title" >NET<span>FLİX</span></h1>
-        <h3 id="description" >Thank you for signing up to Netlix. Tell me more about yourself</h3>
-        </header>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      <header id="header">
+        <h1 id="title">NET<span>FLİX</span></h1>
+        <h3 id="description">
+          Thank you for signing up to Netlix. Tell me more about yourself
+        </h3>
+      </header>
+
+      <section id="survey-form-container">
+        <form action="result.html" method="get">
+
+            <div class="input-box">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="input-box">
+                <label for="age">Age</label>
+                <br>
+                <input type="number" name="Age" id="age" placeholder="Age">
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="Email" id="email" placeholder="Enter Your Email">
+            </div>
+            
+            <div class="input-box">
+                <label for="">Content Type</label>
+                <br>
+                <select name="content" id="dropdown">
+                    <option value="movies">Movies</option>
+                    <option value="series"selected>Series</option>
+                    <option value="tv Shows">TV Shows</option>
+                </select> 
+            </div>
+
+            <div class="input-box">
+                <label for="">Movie Type</label>
+                <br>
+
+                <input type="checkbox" name="movie" id="first-chect" value="Comedy">
+                <label for="first-chect">Comedy</label>
+                <br>
+                <input type="checkbox" name="movie" id="second-chect" value="Action">
+                <label for="first-chect">Action</label>
+                <br>
+                <input type="checkbox" name="movie" id="third-chect" value="Romance">
+                <label for="first-chect">Romance</label>
+
+            </div>
+          
+                
+                
+                
+                <br><br><br>
+                
+                <input type="submit" value="Send">
+
+        </form>
+
+
+      </section>
     </div>
-    
-    <img src="./img/background_image.jpg" alt="">
-</body>
+
+    <img src="./img/background_image.jpg" alt="" />
+  </body>
 </html>
-
-
-
-
-
-
