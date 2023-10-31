@@ -17,58 +17,105 @@
 
       <section id="survey-form-container">
         <form action="result.html" method="get">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="input-box">
+            <label for="age">Age</label>
+            <br />
+            <input type="number" name="Age" id="age" placeholder="Age" />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
 
-            <div class="input-box">
-                <label for="name">Name</label>
-                <br>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-            </div>
-            <div class="input-box">
-                <label for="age">Age</label>
-                <br>
-                <input type="number" name="Age" id="age" placeholder="Age">
-            </div>
-            <div class="input-box">
-                <label for="email">Email</label>
-                <br>
-                <input type="email" name="Email" id="email" placeholder="Enter Your Email">
-            </div>
-            
-            <div class="input-box">
-                <label for="">Content Type</label>
-                <br>
-                <select name="content" id="dropdown">
-                    <option value="movies">Movies</option>
-                    <option value="series"selected>Series</option>
-                    <option value="tv Shows">TV Shows</option>
-                </select> 
-            </div>
+          <div class="input-box">
+            <label for="">Content Type</label>
+            <br />
+            <select name="content" id="dropdown">
+              <option value="movies">Movies</option>
+              <option value="series" selected>Series</option>
+              <option value="tv Shows">TV Shows</option>
+            </select>
+          </div>
 
-            <div class="input-box">
-                <label for="">Movie Type</label>
-                <br>
+          <div class="input-box">
+            <label for="">Movie Type</label>
+            <br />
 
-                <input type="checkbox" name="movie" id="first-chect" value="Comedy">
-                <label for="first-chect">Comedy</label>
-                <br>
-                <input type="checkbox" name="movie" id="second-chect" value="Action">
-                <label for="first-chect">Action</label>
-                <br>
-                <input type="checkbox" name="movie" id="third-chect" value="Romance">
-                <label for="first-chect">Romance</label>
+            <input
+              type="checkbox"
+              name="movie"
+              id="first-chect"
+              value="Comedy"
+            />
+            <label for="first-chect">Comedy</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie"
+              id="second-chect"
+              value="Action"
+            />
+            <label for="first-chect">Action</label>
+            <br />
+            <input
+              type="checkbox"
+              name="movie"
+              id="third-chect"
+              value="Romance"
+            />
+            <label for="first-chect">Romance</label>
+          </div>
 
-            </div>
-          
-                
-                
-                
-                <br><br><br>
-                
-                <input type="submit" value="Send">
+          <div class="input-box">
+            <label for="">Gender</label>
+            <br />
 
+            <input type="radio" name="gender" id="first-radio" value="Male" />
+            <label for="first-radio">Male</label>
+            <br />
+            <input
+              type="radio"
+              name="gender"
+              id="second-radio"
+              value="Female"
+            />
+            <label for="first-radio">Female</label>
+            <br />
+            <input type="radio" name="gender" id="third-radio" value="Other" />
+            <label for="first-radio">Other</label>
+          </div>
+
+          <div class="input-box">
+            <label for="">Feedback</label>
+            <br />
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+              placeholder="Any Comment"
+            ></textarea>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="Send" />
+          </div>
         </form>
-
-
       </section>
     </div>
 
