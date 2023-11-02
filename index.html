@@ -122,10 +122,11 @@
     </div>
 
     <img src="./img/background_image.jpg" alt="" />
+
+    <div class="clock">00:00:00</div>
     
     <script>
-
-const clockElement = document.querySelector(".clock");
+      const clockElement = document.querySelector(".clock");
 
 const updateClock = () => {
     const now = new Date();
@@ -141,7 +142,7 @@ const updateClock = () => {
     clockElement.style.fontSize = '24px';
     clockElement.style.fontWeight = 'bold';
     clockElement.style.padding = '10px';
-    clockElement.style.background = 'white'; 
+    clockElement.style.background = 'none'; 
 
     clockElement.textContent = timeString;
   
@@ -151,6 +152,6 @@ setInterval(updateClock, 1000);
 updateClock();
 
     </script>
-    
+  <script src="script.js"></script>    
   </body>
 </html>
